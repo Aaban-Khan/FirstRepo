@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#work{
+    background-image: url(https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+img{
+    width:570px;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 15px;
+    float: left;
+    margin-left: 50px;
+}

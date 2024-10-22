@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX-FORM</title>
+
+    <style>
+        body {
+            /* height: 900px; */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.redd.it/zjgs096khv591.jpg);
+            color: white;
+        }
+
+        h2 {
+            padding-top: 60px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            padding-right: 150px;
+            font-size: 35px;
+            text-align: center;
+            font-family: Arial black;
+        }
+
+        #bgcolor {
+            height: 100vh;
+            width: 400px;
+            background-color: rgba(5, 1, 1, 0.7);
+        }
+
+        .padding1 {
+            background-color: rgb(61, 60, 60, 0.4);
+            font-size: 15px;
+            border: 1px solid rgb(182, 179, 179);
+            height: 45px;
+            width: 300px;
+            color: aliceblue;
+
+            border-radius: 5px;
+        }
+
+        .padding2 {
+            background-color: rgb(61, 60, 60, 0.4);
+            font-size: 15px;
+            border: 1px solid rgb(182, 179, 179);
+            height: 45px;
+            width: 300px;
+            color: aliceblue;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #red {
+            background-color: red;
+            height: 45px;
+            width: 300px;
+            margin-top: 10px;
+            color: aliceblue;
+            font-size: 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+            padding-bottom: 5px;
+        }
+
+        #grey {
+            background-color: rgba(121, 121, 121, 0.5);
+            height: 45px;
+            width: 300px;
+
+            color: white;
+            font-size: 15px;
+            border: 1px solid rgba(121, 121, 121, 0.5);
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+
+        #size {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #parent {
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="bgcolor">
+            <h2>Sign in</h2>
+            <form>
+                <input type="text" placeholder="Email or mobile number" class="padding1">
+                <br>
+                <input type="password2" placeholder="password" class="padding2">
+                <br>
+                <button id="red"> Sign In</button>
+                <br>
+                <p>OR</p <br>
+                <button id="grey">Use a sign-in code</button>
+                <br>
+                <p id="size">Forget Password?</p>
+                <br>
+                <label id="form">
+                    <input type="checkbox" id="form"> Remember me?
+                </label>
+                <!--<lable>Remember me</lable>-->
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

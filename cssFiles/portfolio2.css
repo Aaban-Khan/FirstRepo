@@ -1,0 +1,380 @@
+#design{
+    width: 350px;
+    height: 250px;
+    /* background-color: cadetblue;  */
+    display: inline-block;/*optional */
+    position: absolute;
+    /* float: left; */
+    overflow: hidden;
+    -webkit-mask-image:
+        linear-gradient(360deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+#mainB{
+    background-color: #ff3700;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 650px;
+    width: 105px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #ff3700;
+    position: absolute;
+    top:115px;
+    left:128px;
+    text-transform: uppercase;
+}
+
+#mainB:hover{
+    cursor: pointer;
+}
+
+#mainB:active{
+    border: 1px solid #fff;
+}
+
+#a{
+    height: 50px;
+    width: 40px;
+    background-color: #ff3700;
+    position: absolute;
+    top:190px;
+    left: 250px;
+    border-radius: 10px;
+    /* transition: all; */
+    transition-duration: 1s;
+    animation: a;
+    /* animation-delay: 2s; */
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#a:hover{
+    background-color: #fff;
+}
+
+@keyframes a{
+    0%{
+        height: 50px;
+        width: 40px;
+    }
+    25%{
+        height: 45px;
+        width: 35px;
+    }
+    50%{
+        height: 40px;
+        width: 30px;
+    }
+    75%{
+        height: 45px;
+        width: 35px;
+    }
+    100%{
+        height: 50px;
+        width: 40px;
+    }
+}
+
+#b{
+    height: 58px;
+    width: 33px;
+    background-color: #ff3700;
+    position: absolute;
+    top:75px;
+    left:45px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: b;
+    /* animation-delay: 3s; */
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#b:hover{
+    background-color: #fff;
+}
+
+@keyframes b{
+    0%{
+        height: 58px;
+        width: 33px;
+    }
+    25%{
+        height: 53px;
+        width: 28px;
+    }
+    50%{
+        height: 48px;
+        width: 23px;
+    }
+    75%{
+        height: 53px;
+        width: 28px;
+    }
+    100%{
+        height: 58px;
+        width: 33px;
+    }
+}
+
+#c{
+    height: 66px;
+    width: 53px;
+    background-color: #ff3700;
+    position: absolute;
+    top: 67px;
+    left: 235px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: c;
+    /* animation-delay: 3s; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#c:hover{
+    background-color: #fff;
+}
+
+@keyframes c{
+    0%{
+        height: 66px;
+        width: 53px;
+    }
+    25%{
+        height: 61px;
+        width: 48px;
+    }
+    50%{
+        height: 56px;
+        width: 43px;
+    }
+    75%{
+        height: 61px;
+        width: 48px;
+    }
+    100%{
+        height: 66px;
+        width: 53px;
+    }
+}
+
+#d{
+    height: 50px;
+    width: 93px;
+    background-color: #ff3700;
+    position: absolute;
+    top:170px;
+    left: 130px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: d;
+    /* animation-delay: 3s; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#d:hover{
+    background-color: #fff;
+}
+
+@keyframes d{
+    0%{
+        height: 50px;
+        width: 93px;
+    }
+    25%{
+        height: 45px;
+        width: 88px;
+    }
+    50%{
+        height: 40px;
+        width: 83px;
+    }
+    75%{
+        height: 45px;
+        width: 88px;
+    }
+    100%{
+        height: 50px;
+        width: 93px;
+    }
+}
+
+#e{
+    height: 33px;
+    width: 83px;
+    background-color: #ff3700;
+    position: absolute;
+    top:72px;
+    left: 145px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: e;
+    /* animation-delay: 3s; */
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#e:hover{
+    background-color: #fff;
+}
+
+@keyframes e{
+    0%{
+        height: 33px;
+        width: 83px;
+    }
+    25%{
+        height: 28px;
+        width: 78px;
+    }
+    50%{
+        height: 23px;
+        width: 73px;
+    }
+    75%{
+        height: 28px;
+        width: 78px;
+    }
+    100%{
+        height: 33px;
+        width: 83px;
+    }
+}
+
+#f{
+    height: 88px;
+    width: 53px;
+    background-color: #ff3700;
+    position: absolute;
+    top:28px;
+    left:83px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: f;
+    /* animation-delay: 3s; */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#f:hover{
+    background-color: #fff;
+}
+
+@keyframes f{
+    0%{
+        height: 88px;
+        width: 53px;
+    }
+    25%{
+        height: 83px;
+        width: 48px;
+    }
+    50%{
+        height: 78px;
+        width: 43px;
+    }
+    75%{
+        height: 83px;
+        width: 48px;
+    }
+    100%{
+        height: 88px;
+        width: 53px;
+    }
+}
+
+#g{
+    height: 43px;
+    width: 94px;
+    background-color: #ff3700;
+    position: absolute;
+    top:140px;
+    left: 235px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: g;
+    /* animation-delay: 3s; */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} 
+
+#g:hover{
+    background-color: #fff;
+}
+
+@keyframes g{
+    0%{
+        height: 43px;
+        width: 94px;
+    }
+    25%{
+        height: 38px;
+        width: 86px;
+    }
+    50%{
+        height: 33px;
+        width: 81px;
+    }
+    75%{
+        height: 38px;
+        width: 86px;
+    }
+    100%{
+        height: 43px;
+        width: 94px;
+    }
+}
+
+#h{
+    height: 68px;
+    width: 93px;
+    background-color: #ff3700;
+    position: absolute;
+    top:143px;
+    left: 30px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    animation: h;
+    /* animation-delay: 3s; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#h:hover{
+    background-color: #fff;
+}
+
+@keyframes h{
+    0%{
+        height: 68px;
+        width: 93px;
+    }
+    25%{
+        height: 63px;
+        width: 88px;
+    }
+    50%{
+        height: 58px;
+        width: 83px;
+    }
+    75%{
+        height: 63px;
+        width: 88px;
+    }
+    100%{
+        height: 68px;
+        width: 93px;
+    }
+}
+

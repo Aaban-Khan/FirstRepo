@@ -1,0 +1,106 @@
+body{
+    height: 580px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+     url(https://mediavoxdigital.com/wp-content/uploads/2023/05/business-team-working-office-worker-concept.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:aliceblue;
+    background: rgba(0,0,0,0,6);
+}
+
+#h1{
+    font-family: Arial Black;
+    font-size:50px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+#p1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgba(236, 234, 234, 0.884)
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table,tr,th,td{
+    width: 800px;
+    height: 50px;
+    margin:0 auto;
+    
+    
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 12px;
+    color:rgb(240, 248, 255);
+}
+
+.pinkimp{
+    background-image: -webkit-linear-gradient(to right, #fa95a6, #fa6363);
+    background-image: linear-gradient(to right, #fa95a6 70%, #fa6363);
+}
+
+.dpinkimp{
+    background-image: -webkit-linear-gradient(to right, #fa6363, #f80707);
+    background-image: linear-gradient(to right, #fa6363 70%, #ff2020);
+}
+
+.redimp{
+    background-color: #ff2020
+}
+.black{
+    background-color:black;
+
+}
+
+.grey{
+    background-color: rgb(65, 63, 63);
+}
+
+button{
+    border-color: rgba(240, 248, 255, 0);
+    color:aliceblue;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#padding1{
+    font-size: 25px;
+    padding: 6px;
+}
+
+#padding2{
+    font-size: 25px;
+    padding: 6px;
+}
+
+#padding3{
+    font-size: 25px;
+    padding: 6px;
+}
+
+.pink{
+    background-color: rgb(250,149, 166);
+    
+}
+
+.dpink{
+    background-color:rgb(250, 99, 99);
+}
+
+.red{
+    background-color:rgb(255,32,32);
+}
+
+#trans{
+    transition: width 1s;
+}
+
+#trans:hover{
+    width:600px;
+}
