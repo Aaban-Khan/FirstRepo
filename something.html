@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .slider {
+            width: 380px;
+            max-width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            margin: 110px auto 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .list {
+            position: absolute;
+            width: max-content;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            transition: 1s;
+        }
+
+        .list img {
+            width: 100%;
+            /* max-width: 450px; */
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            color: #fff;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dots li {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff7a;
+            margin: 10px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .dots li.active {
+            width: 30px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .slider {
+                margin: 50px auto 0 auto;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .slider {
+                height: 250px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .slider {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="column1" class="block"> -->
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="images/form.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/HD-wallpaper-space-battle-explosion-fighters-flag-ships-support-ships.jpg" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/Starwars.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/table1.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/form.png" alt="" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Dots for navigation -->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    <!-- </div> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const list = document.querySelector('.slider .list');
+            const items = document.querySelectorAll('.slider .list .item');
+            const dots = document.querySelectorAll('.slider .dots li');
+
+            let active = 0;
+            const lengthItems = items.length;
+
+            // Function to move the slider to the next item
+            function showNextSlide() {
+                active = (active + 1) % lengthItems;
+                reloadSlider();
+            }
+
+            // Function to reload the slider position based on the active item
+            function reloadSlider() {
+                const offsetLeft = items[active].offsetLeft;
+                list.style.left = -offsetLeft + 'px';
+
+                // Update active dot
+                document.querySelector('.slider .dots li.active').classList.remove('active');
+                dots[active].classList.add('active');
+            }
+
+            // Set up an interval for automatic sliding
+            setInterval(showNextSlide, 3000);
+
+            // Add click events for dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    active = index;
+                    reloadSlider();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

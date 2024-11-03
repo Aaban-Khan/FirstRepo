@@ -20,26 +20,27 @@
                 <h2 id="skill"><i class="fa-solid fa-layer-group"></i>My Skills</h2>
                 <h1 id="skilld">Frontend Developer</h1>
 
-            <li><h4>html</h4>
-                <span class="bar"> <span class="html"></span> </span>
-            </li>
+                <div class="bar-wrapper">
+                    <li><h4>html</h4>
+                        <span class="bar"> <span class="html"></span> </span>
+                    </li>
 
-            <li><h4>css</h4>
-                <span class="bar"> <span class="css"></span> </span>
-            </li>
+                    <li><h4>css</h4>
+                        <span class="bar"> <span class="css"></span> </span>
+                    </li>
 
-            <li><h4>javascript</h4>
-                <span class="bar"> <span class="javascript"></span> </span>
-            </li>
+                    <li><h4>javascript</h4>
+                        <span class="bar"> <span class="javascript"></span> </span>
+                    </li>
 
-            <li><h4>python</h4>
-                <span class="bar"> <span class="python"></span> </span>
-            </li>
+                    <li><h4>python</h4>
+                        <span class="bar"> <span class="python"></span> </span>
+                    </li>
 
-            <li><h4>figma</h4>
-                <span class="bar"> <span class="figma"></span> </span>
-            </li>
-
+                    <li><h4>figma</h4>
+                        <span class="bar"> <span class="figma"></span> </span>
+                    </li>
+                </div>
             </div>
 
 
@@ -48,8 +49,35 @@
                 <h2 id="myprojects"><i class="fa-regular fa-folder-open"></i></i>Projects</h2>
                 <h1 id="projectsD"> Developer</h1>
 
-                <div class="imgslider"></div>
+            <!-- <div class="imgslider"></div> -->
+                        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="images/form.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/HD-wallpaper-space-battle-explosion-fighters-flag-ships-support-ships.jpg" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/Starwars.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/table1.png" alt="" loading="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/form.png" alt="" loading="lazy">
+                </div>
+            </div>
 
+            <!-- Dots for navigation -->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+                        </div>
                    <a href="work.html"> <button id="work">View Work</button></a>
             </div>
 
@@ -173,34 +201,76 @@
                                     <!---->
 
         <!--BOX 2 FORMATTING START-->
-        <div id="box2">
-            <div id="logo"><i class="fa-solid fa-user"></i></div>
-            <button id="box2B"><div id="circle"></div>Available Now</button>
-
-            <h1 id="me">Aaban Khan</h1>
-            <p id="gmail">aabankhan@gmail.com</p>
-            <p id="addr">Indore, India</p>
-
+        <div class="box box2">
+            <div class="about-us-info">
+                
+                <div class="about-img">
+                    <div id="logo"><i class="fa-solid fa-user"></i></div>
+                </div>
+    
+                <div class="me-info">
+                    <button id="box2B">
+                        <div id="circle"></div>
+                        Available Now
+                    </button>
+                    <div class="me-info2">
+                        <h1 id="me">Aaban Khan</h1>
+                        <p id="gmail">aabankhan@gmail.com</p>
+                        <p id="addr">Indore, India</p>
+                    </div>
+                </div>
+    
+            </div>
+    
             <div id="about">
-                <h3>About Me</h3>
-            <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit laudantium nesciunt officia aut labore quos odit, doloremque ipsum nostrum saepe iste molestias odio dicta delectus consequuntur non dolorum accusamus necessitatibus?</p>
+              <h3>About Me</h3>
+              <p id="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+                laudantium nesciunt officia aut labore quos odit, doloremque ipsum
+                nostrum saepe iste molestias odio dicta delectus consequuntur non
+                dolorum accusamus necessitatibus?
+              </p>
             </div>
-
-            <div id="show1"><p class="text">5</p><i class="fa-solid fa-plus"></i><br>
-               
-                <button class="showbtn"><i class="fa-regular fa-folder"></i>Projects</button>
+    
+            <div class="about-show">
+    
+              <div id="show1">
+                
+                <div class="text-show">
+                    <p class="text">5</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <button class="showbtn">
+                  <i class="fa-regular fa-folder"></i>Projects
+                </button>
+              </div>
+    
+              <div id="show2">
+    
+                <div class="text-show">
+                    <p class="text">0</p>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+    
+                <button class="showbtn">
+                  <i class="fa-regular fa-face-smile"></i>Clients
+                </button>
+              </div>
+    
+              <div id="show3">
+    
+                <div class="text-show">
+                    <p class="text">20</p>
+                    <i class="fa-solid fa-plus" id="plus3"></i>
+                </div>
+    
+                <button class="showbtn">
+                  <i class="fa-solid fa-meteor"></i>Days Exp.
+                </button>
+              </div>
+    
             </div>
-
-            <div id="show2"><p class="text">0</p><i class="fa-solid fa-plus"></i><br>
-               
-                <button class="showbtn"><i class="fa-regular fa-face-smile"></i>Clients</button>
-            </div>
-
-            <div id="show3"><p class="text3">20</p><i class="fa-solid fa-plus" id="plus3"></i><br>
-               
-                <button class="showbtn"><i class="fa-solid fa-meteor"></i>Days Exp.</button>
-            </div>
-        </div>
+          </div>
 
         <!--BOX 2 FORMATTING END-->
 
@@ -228,41 +298,44 @@
             <h2 class="center1"><i class="fa-solid fa-user-plus"></i>Contact Me</h2>
             <h1 class="center2">Let's Start Working Together</h1>
 
-            <div id="design">
+            <div class="contact-wrapper">
+                <div id="design">
 
-                <!--design-->
+                    <!--design-->
 
-                <div id="a"></div>
-                <div id="b"></div>
-                <div id="c"></div>
-                <div id="d"></div>
-                <div id="e"></div>
-                <div id="f"></div>
-                <div id="g"></div>
-                <div id="h"></div>
+                    <div id="a"></div>
+                    <div id="b"></div>
+                    <div id="c"></div>
+                    <div id="d"></div>
+                    <div id="e"></div>
+                    <div id="f"></div>
+                    <div id="g"></div>
+                    <div id="h"></div>
 
-                <!--design-->
+                    <!--design-->
 
-                <button onclick="myFunction()" id="mainB">Send</button>
-            </div>
+                    <button onclick="myFunction()" id="mainB">Send</button>
+                </div>
 
-            <div id="Contact">
-              
-            <form>
-                <input type="text" placeholder="Name" class="pad1">
-                <input type="text" placeholder="Email" class="pad2">
-                <input type="text" placeholder="Message" class="pad3">
-            </form>
+                <div id="Contact">
+                
+                <form>
+                    <input type="text" placeholder="Name" class="pad1">
+                    <input type="text" placeholder="Email" class="pad2">
+                    <input type="text" placeholder="Message" class="pad3">
+                </form>
+                </div>
             </div>
         </div>
 
         <!--BOX 4 FORMATTING END-->
 
         </div><!--container end-->
-    <script>
+    <!-- <script>
             function myFunction(){
             alert("Your Message is Sucessfully send to Aaban Khan")
             }
-    </script>
+    </script> -->
+    <script src="/jsFiles/script.js"></script>
 </body>
 </html>
